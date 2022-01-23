@@ -1,0 +1,15 @@
+server:
+  port: '8080'
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: user
+    url: jdbc:postgresql://localhost:5432/shop
+    password: '123'
+  jpa:
+    hibernate:
+      use-new-id-generator-mappings: 'false'
+      ddl-auto: create-drop
+    show-sql: 'true'
+
+#  http://localhost:8082/api/v1/posts
